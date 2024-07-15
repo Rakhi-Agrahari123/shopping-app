@@ -1,27 +1,24 @@
 import React from 'react'
-import TopStrip from '../component/TopStrip'
-import Navbar from '../component/Navbar'
 import Hero from '../component/Hero'
 import Banner from '../component/Banner'
 import GridSection from '../component/GridSection'
 import Features from '../component/Features'
-import FitGuide from '../component/FitGuide'
-import EmailSubscribtion from '../component/EmailSubscribtion.jsx'
-import Footer from '../component/Footer.jsx'
+// import Footer from '../component/Footer.jsx'
+import ProductList from '../component/ProductList.jsx'
+// import FooterData from '.
+import FooterData from './../Data/FooterData.jsx'
 
 
 const Home = () => {
   return (
     <div>
-        <TopStrip />
-         <Navbar />
-         <Hero/>
+     
+        <Hero/>
          <GridSection />
          <Banner/>
-         <FitGuide />
-         <EmailSubscribtion />
          <Features />
-         <Footer />
+         <ProductList />
+         {/* <Footer /> */}
          </div>
 
 

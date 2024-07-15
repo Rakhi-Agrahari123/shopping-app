@@ -10,17 +10,16 @@ function Footer() {
   return (
 
 <footer className='border-2 border-red-600 bg-slate-800'>    
-    <div className= 'relative  grid grid-rows-5 grid-cols-3 container mx-auto py-0 p-3  text-white' >
+    <div className= 'relative  grid grid-rows-3 grid-cols-3 container mx-auto py-0 p-3  text-white' >
 
-
-    <div className='w-full h-full col-span-3 text-center font-extrabold text-1xl mt-4 mb-'>
+    <div className='w-full h-full col-span-3 text-center font-extrabold text-1xl mt-3 mb-'>
     <h1 ><span className='hover:text-red-600 delay-100 '>Back to top</span></h1>
     </div>
 
-        <div className=' text-center m-2 boder-2 border-white mt-0'> 
+        <div className=' text-center m-2 boder-2 border-white mt-0 justify-items-center'> 
             
             <ol >
-                <li className='font-bold mb-3 '>Get to Know Us</li>
+                <li className='font-bold mb-3 '>Get us to Know Us</li>
                 <li className='hover:underline hover:text-yellow-200 hover:animate-bounce'>About Us</li>
                 <li className='hover:underline hover:text-yellow-200 hover:animate-bounce'>Careers</li>
                 <li className='hover:underline hover:text-yellow-200 hover:animate-bounce'>Press Releases</li>
@@ -43,7 +42,8 @@ function Footer() {
             
 
             </div>
-        <div className=' boder  m-4 mt-0 text-center col'> <ol>
+
+            <div className=' boder  m-4 mt-0 text-center col'> <ol>
             <li className='font-bold mb-3'>Make Money with Us</li>
             <li className='hover:underline hover:text-yellow-200 hover:animate-bounce'>Sell on Amazon</li>
             <li className='hover:underline hover:text-yellow-200 hover:animate-bounce'>Sell under Amazon Accelerator</li>
@@ -53,22 +53,19 @@ function Footer() {
             </div>
             
             <div className='align-middle row-span-1  m-5 text-lg py-1 '>
-            <div className=' '>
-                <ul className=''>
+            
+                <ul className='justify-items-center grid grid-cols-6 list-none
+                pl-70'>
             <li><IoCallOutline /></li>
             <li><TiSocialFacebook /></li>
             <li><TiSocialYoutube /></li>
             <li><SlSocialInstagram /></li>
             <li><SlSocialGoogle /></li>
             <li><CiMail /></li> 
-             </ul>
+                </ul>
             </div>
             
             
-            
-            
-
-            </div>
             </div>
         
         

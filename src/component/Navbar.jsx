@@ -19,7 +19,7 @@ function Navbar() {
 
   return (
     
-    <nav className="p-4  sticky top-0 z-10 border-b border-pink bg-red-600" >
+    <nav className="p-4  sticky top-0 z-10 border-b border-pink bg-red-600 " >
       <div> 
         {/* firstrow */}
         <section className='flex item-center justify-between p-3'>
@@ -36,22 +36,24 @@ function Navbar() {
             />
           </div>
           <div className='flex items-center gap-8'>
-            <Link to="">
+            <Link to="/signIn">
               <IoLogInOutline className="text-2xl text-white hover:animate-bounce" />
               <span className="text-xs font-normal hover:underline hover:onclick hover:text-blue-950 text-white ">
                 Sign In
               </span>
             </Link>
 
-            <Link to="">
+            <Link to="/favrout">
               <GoHeart className="text-2xl text-white hover:animate-bounce" />
               <span className="text-xs font-normal hover:underline hover:onclick hover:text-blue-950 text-white">Favrout</span>
             </Link>
 
-            <Link to="">
+            <Link to="/cart">
               <HiOutlineShoppingBag className="text-2xl text-white hover:animate-bounce" />
               <span className="text-xs font-normal hover:underline hover:onclick hover:text-blue-950 text-white">Add Cart</span>
             </Link>
+
+
           </div>
         </section>
 
@@ -62,7 +64,7 @@ function Navbar() {
             <Navitem to='/' text='Home' />
             <Navitem to='/men' text='Men' />
             <Navitem to='/women' text='Woman' />
-            <Navitem to='/' text='Kids' />
+            <Navitem to='/kid' text='Kids' />
           
 
          </ul>

@@ -18,7 +18,7 @@ const links ={
 };
 
 return (
-    <div className="container mx-auto  py-12">
+    <div className="container mx-auto  py-12 m-0 ">
       <h1 className="text-center leading-wide text-2xl mb-12 font-medium">
         FIT GUIDE
       </h1>

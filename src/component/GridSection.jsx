@@ -12,7 +12,7 @@ function GridSection() {
       </h1>
       {/* grid section */}
 
-      <div className="grid grid-cols-4 gap-6 grid-rows-2">
+      <div className="grid grid-cols-4 gap-6 grid-rows-2 p-0">
         {/* large image */}
         <div className="col-span-2 row-span-2">
           <div className=" relative overflow-hidden" >
