@@ -18,6 +18,8 @@ function Footer2() {
               <a href="">
                 <FaTwitter size={24} />
               </a>
+              <br/>
+              <img className="h-20 rounded-full" src="https://th.bing.com/th/id/OIP.tZ76jxAAUrS7WRL2WsyDdQHaHa?w=185&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7" ></img >
             </div>
           </div>
           {footerColumns.map((item) => (

@@ -1,7 +1,19 @@
 import React from 'react';
 import Rating from '@mui/material/Rating';
-
+import { addToCart } from '../redux/cartSlice';
+import { useDispatch } from 'react-redux';
 function ProductCard({ product }) {
+  const dispatch = useDispatch();
+
+  const handleClick = () =>{
+dispatch(addToCart({
+   id : product.id,
+   name : product.name,
+   price : product.new_price ,
+   image : product.image
+}))
+  }
+
   console.log(product);
   return (
     <div>
@@ -16,16 +28,14 @@ function ProductCard({ product }) {
           opacity-0 w-full  translate-y-full  group-hover:opacity-100 transition-all duration-200 ease-in-out group-hover:-translate-y-0"
         >
           <div className="mt-auto">
-            <button className="bg-black bg-opacity-50 px-6 py-4 w-full text-white">
+            <button onClick={handleClick} className="bg-black bg-opacity-50 px-6 py-4 w-full text-white">
               Add to Cart
             </button>
           </div>
         </div>
       </div>
       <div className="mt-3">
-
-    <Rating name=" Product_rating" value={product.rating} readOnly size='small' sx={{color : 'black'}} />
- 
+  <Rating name="product_rating" value={product.rating} readOnly size='small' sx={{color :'black'}}  />
         <h1>{product.name}</h1>
         <div className="flex gap-2">
           <span className=" text-red-500 line-through">

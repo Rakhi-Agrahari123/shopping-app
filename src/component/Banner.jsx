@@ -7,7 +7,7 @@ function Banner() {
 
   return (
     <Slide triggerOnce>
-    <div className='bg-red-600 m-6 grid grid-cols-2 p-6' >
+    <div className='bg-red-600 grid grid-cols-2 p-6 m-0 '  >
       {/* 1st column */}
       <div>
         {/* 1st row */}
