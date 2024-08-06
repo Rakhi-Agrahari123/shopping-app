@@ -1,17 +1,18 @@
 import React from 'react';
 import Rating from '@mui/material/Rating';
-import { addToCart } from '../redux/cartSlice';
+import { addItemsToCart } from '../redux/cartSlice';
 import { useDispatch } from 'react-redux';
 function ProductCard({ product }) {
   const dispatch = useDispatch();
+  console.log(product.new_price)
 
-  const handleClick = () =>{
-dispatch(addToCart({
-   id : product.id,
-   name : product.name,
-   price : product.new_price ,
-   image : product.image
-}))
+  const handleClick = () => {
+    dispatch(addItemsToCart({
+      id: product.id,
+      name: product.name,
+      price: product.new_price,
+      image: product.image
+    }))
   }
 
   console.log(product);
@@ -35,7 +36,7 @@ dispatch(addToCart({
         </div>
       </div>
       <div className="mt-3">
-  <Rating name="product_rating" value={product.rating} readOnly size='small' sx={{color :'black'}}  />
+        <Rating name="product_rating" value={product.rating} readOnly size='small' sx={{ color: 'black' }} />
         <h1>{product.name}</h1>
         <div className="flex gap-2">
           <span className=" text-red-500 line-through">

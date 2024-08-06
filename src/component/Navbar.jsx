@@ -9,6 +9,7 @@ import all_products from '../assets/all_product';
 import { CircularProgress } from '@mui/material';
 import './Navbar.css'
 
+
 const Navbar = () => {
   const { totalQuantity } = useSelector((state) => state.cart);
   const inputRef = useRef(null);
@@ -95,7 +96,7 @@ const Navbar = () => {
           {/* Logo and Brand */}
           <div className="flex items-center">
             <img className="h-20 rounded-full mr-3 p-0 mt-3" src="https://th.bing.com/th/id/OIP.tZ76jxAAUrS7WRL2WsyDdQHaHa?w=185&h=185&c=7&r=0&o=5&dpr=1.3&pid=1.7"alt="Logo" />
-            <p className="font-semibold tracking-widest">YOUR BRAND</p>
+            <p id="Brand" className="font-semibold tracking-widest text-white font-serif cursor-pointer webbg-clip-text  ">YOUR BRAND</p>
           </div>
 
           {/* Search Bar */}
@@ -249,8 +250,8 @@ const Navbar = () => {
               <ul className="flex flex-col space-y-4">
                 <NavItem to="/" text="SHOP" />
                 <NavItem to="/men" text="MEN" />
-                <NavItem to="/women" text="WOMEN" />
-                <NavItem to="/kids" text="KIDS" />
+                <NavItem to="/Women" text="WOMEN" />
+                <NavItem to="/kid" text="KIDS" />
               </ul>
             </div>
           </div>
@@ -276,7 +277,8 @@ export default Navbar;
 
           //  <div className="flex justify-center items-center ">
           //   <ul className="flex space-x-10 ">
-          //     <Navitem to="/" text="HOME"  />                   <Navitem to="/men" text="MEN" />
+          //     <Navitem to="/" text="HOME"  />   
+                //  <Navitem to="/men" text="MEN" />
           //      <Navitem to="/women" text="WOMEN" />
           //      <Navitem to="/kid" text="KIDS" />
             
